@@ -2180,7 +2180,7 @@ color: #ea4335;
   background: #f7fbff none repeat scroll 0 0;
   border: medium none;
   border-radius: 35px;
-  color: #87e0f0;
+  color: #A19B79;
   height: 55px;
   padding: 0 40px;
   width: 500px;
@@ -2189,10 +2189,10 @@ color: #ea4335;
   background: #f7fbff none repeat scroll 0 0;
 }
 .newsletter__form .input__box input::-webkit-input-placeholder {
-  color: #87e0f0;
+  color: #A19B79;
 }
 .newsletter__form .input__box input::-webkit-ms-placeholder {
-  color: #87e0f0;
+  color: #A19B79;
 }
 
 .newsletter__form .input__box form {
@@ -4120,7 +4120,7 @@ footer.footer_area {
 }
 
 .doctor_name > h2 {
-    color: #87e0f0;
+    color: #A19B79;
     font-size: 40px;
     font-weight: bold;
     line-height: 1;
