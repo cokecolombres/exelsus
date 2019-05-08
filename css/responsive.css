@@ -2570,3 +2570,8 @@
 		width: 135px;
 	}
 }
+
+#logo {
+	width: 50%;
+	margin-top: -5%;
+}
