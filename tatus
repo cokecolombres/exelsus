@@ -1,0 +1,104 @@
+[33mcommit 6a5b13abddc8b71a9fd8d7fd85b2798cb9a92f9c[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: cokeman <coke_colombres@hotmail.com>
+Date:   Fri May 31 09:47:52 2019 +0200
+
+    puliendo por bloques
+
+[33mcommit 775cf01d9c0a84d527dc49d0f7b488194d634746[m
+Author: Tomás Gueri <tomas_053@hotmail.es>
+Date:   Wed May 8 11:20:55 2019 -0300
+
+    cambios generales
+
+[33mcommit f873e13bb425ca62c815eb9a739fcf8b09428032[m
+Merge: 6e1bacf a5fdfc7
+Author: Tomás Gueri <tomas_053@hotmail.es>
+Date:   Wed May 8 10:53:42 2019 -0300
+
+    Merge branch 'master' of https://github.com/cokecolombres/exelsus
+
+[33mcommit 6e1bacff09f94dcde49852a4bab7784e105cb622[m
+Author: Tomás Gueri <tomas_053@hotmail.es>
+Date:   Wed May 8 10:53:29 2019 -0300
+
+    adsad
+
+[33mcommit a5fdfc739bea8cf4287d4b937acd3bab8f778331[m
+Author: Coke <coke_colombres@hotmail.com>
+Date:   Wed May 8 10:51:23 2019 -0300
+
+    asdads
+
+[33mcommit 57f55d3e64c6adf5aa2357365186d5fa07393fdf[m
+Merge: 253dd93 bf9bd1f
+Author: Tomás Gueri <tomas_053@hotmail.es>
+Date:   Tue May 7 17:38:46 2019 -0300
+
+    Merge branch 'master' of https://github.com/cokecolombres/exelsus
+
+[33mcommit 253dd936b836c2cf6a4e5a554f8f2cbda95e03e5[m
+Author: Tomás Gueri <tomas_053@hotmail.es>
+Date:   Tue May 7 17:38:32 2019 -0300
+
+    bajando
+
+[33mcommit bf9bd1f909d8636c72a106f2c6f0ce6d151a1f0c[m
+Merge: 8e7dc75 bc55546
+Author: Coke <coke_colombres@hotmail.com>
+Date:   Tue May 7 17:07:10 2019 -0300
+
+    asdads
+
+[33mcommit 8e7dc75b5d3f895a284b370aab4300ac581707ce[m
+Author: Coke <coke_colombres@hotmail.com>
+Date:   Mon May 6 18:53:31 2019 -0300
+
+    asdad
+
+[33mcommit bc555461979cbf3142e3b732b89744deaed32229[m
+Author: Tomás Gueri <tomas_053@hotmail.es>
+Date:   Mon May 6 17:11:10 2019 -0300
+
+    Cambie el index
+
+[33mcommit 34805cdac820cf7f5a77470acb092487ca7accbd[m
+Author: Tomás Gueri <tomas_053@hotmail.es>
+Date:   Mon May 6 15:58:30 2019 -0300
+
+    Cambie solo lo de areas medicas
+
+[33mcommit 8f1395222a4c14ab77faed5f5c5b583579cdddca[m
+Author: Coke <coke_colombres@hotmail.com>
+Date:   Sun May 5 17:49:49 2019 -0300
+
+    asdas
+
+[33mcommit fcd068e43dd2cd5a33b8796e00c7cd2c14375f76[m
+Author: Coke <coke_colombres@hotmail.com>
+Date:   Fri May 3 17:24:18 2019 -0300
+
+    cambio index
+
+[33mcommit f5681e04096eadfb79525fabf53d463c4eba4aa5[m
+Author: Tomás Gueri <tomas_053@hotmail.es>
+Date:   Fri May 3 17:07:53 2019 -0300
+
+    Mi primer cambio jeje
+
+[33mcommit 9330ed3c9f10afc296ffc5bb60c118498a5e8641[m
+Author: Coke <coke_colombres@hotmail.com>
+Date:   Fri May 3 16:41:00 2019 -0300
+
+    ordenando
+
+[33mcommit f74ea44589da24ec12f8ab6e1cad9c0618e1134d[m
+Author: Coke <coke_colombres@hotmail.com>
+Date:   Fri May 3 16:33:03 2019 -0300
+
+    asdasda
+
+[33mcommit eac9425697d91d093dacadc388be2b3940aa2676[m
+Author: cokecolombres <coke_colombres@hotmail.com>
+Date:   Fri May 3 16:23:29 2019 -0300
+
+    Initial commit
