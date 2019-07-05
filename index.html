@@ -25,6 +25,107 @@
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
+<style type="text/css">
+    #team .card {
+    border: none;
+    background: #ffffff;
+}
+
+.image-flip:hover .backside,
+.image-flip.hover .backside {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    border-radius: .25rem;
+}
+
+.image-flip:hover .frontside,
+.image-flip.hover .frontside {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.mainflip {
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -moz-transition: 1s;
+    -moz-transform: perspective(1000px);
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.frontside {
+    position: relative;
+    -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    z-index: 2;
+    margin-bottom: 30px;
+}
+
+.backside {
+    min-height: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+}
+
+.frontside,
+.backside {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transition: 1s;
+    -moz-transform-style: preserve-3d;
+    -o-transition: 1s;
+    -o-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+
+.frontside .card,
+.backside .card {
+    min-height: 312px;
+}
+
+.backside .card a {
+    font-size: 18px;
+    color: #007b5e !important;
+}
+
+.frontside .card .card-title,
+.backside .card .card-title {
+    color: #007b5e !important;
+}
+
+.frontside .card .card-body img {
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+}
+</style>
+
 <body>
     <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -132,6 +233,16 @@
             <!-- End Mainmenu Area -->
         </header>
         <!-- End Header Style -->
+
+
+        <style type="text/css">
+          .servicios-index{
+            background-color: #f2f2f2;
+            opacity: 0.8;
+            padding: 6px;
+            border-radius: 5px;
+          }
+        </style>
     
          <!--Special Banner start-->
         <div class="special_banner">
@@ -139,17 +250,19 @@
                 <div class="row">
                     <div class="col-lg-7 col-12">
                         <div class="sepcial_banner_content">
-                            <h4>Centro médico exelsus</h4>
-                            <h2>Tratamientos oncológicos</h2>
+                            <h1>Centro médico exelsus</h1>
                             <br>
-                            <h4>Servicios que brindamos:</h4>
+                            <h4 class="text-white">Tratamientos oncológicos</h4>
+                            <!-- <br>
+                            <h4>Servicios que brindamos:</h4> -->
                             <hr>
-                            <ul>
-                                <li><h5><i class="fa fa-check-circle"></i> Consultorios médicos</h5></li>
-                                <li><h5><i class="fa fa-check-circle"></i> Salas de quimioterapia privadas individuales de primer nivel</h5></li>
-                                <li><h5><i class="fa fa-check-circle"></i> Maquina PAXMAN® para prevención de caída del pelo.</h5></li>
+                            <h5 class="text-white">Acompañarte y brindarte el mejor servicio es nuestro principal objetivo</h5>
+                           <br>
+                            <ul class="servicios-index">
+                                <li><h6><i class="fa fa-check-circle"></i> Consultorios médicos</h6></li>
+                                <li><h6><i class="fa fa-check-circle"></i> Salas de quimioterapia privadas individuales de primer nivel</h6></li>
+                                <li><h6><i class="fa fa-check-circle"></i> Maquina PAXMAN® para prevención de caída del pelo.</h6></li>
                             </ul>
-                            <a class="btn btn-primary">Más informacion</a>
                         </div>
                     </div>
                 </div>
@@ -169,8 +282,9 @@
                     <p>El uso de enfriamiento del cuero cabelludo o "gorros fríos" ha demostrado ser una forma
                     efectiva de minimizar la pérdida de cabello inducida por la quimioterapia y puede dar
                     como resultado un alto nivel de retención o preservar por completo el cabello.</p>
-                    <div class="contact_btn">
-                        <a href="doctor-details.html">Más información</a>
+                    <div class="">
+                      <br>
+                        <a class="btn btn-outline-success" href="doctor-details.html">Más información</a>
                     </div>
                 </div>
             </div>
@@ -244,7 +358,7 @@
        
 
         <!--Specialized Doctor start-->   
-        <div class="specialized_doctor pt--80">
+        <div class="specialized_doctor ">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -252,11 +366,9 @@
                             <div class="title_left">
                                 <h1>Nuestros Profesionales</h1>
                             </div>
-                            <div class="title_right section__title">
-                                <h2>Nuestros profesionales</h2>
-                            </div> 
+                           
                         </div>
-                        <div class="doctor_tab_inner">
+                        <!-- <div class="doctor_tab_inner">
                             <div class="tab-content">
                                 <div role="tabpanel" class="tab-pane active show fade" id="mohin">
                                     <div class="doctor_details">
@@ -352,7 +464,6 @@
                                 </div>
                             </div>
                             <div class="doctor_name_tab">
-                               
                                 <ul class="nav" role="tablist">
                                     <li>
                                         <a href="#mohin" class="active" aria-controls="mohin" data-toggle="tab">
@@ -374,13 +485,134 @@
                                     </li>
                                 </ul>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
             <br>
         </div>
         <!--Specialized Doctor end-->   
+
+
+
+        <!-- Team -->
+        <section id="team" class="pb-5">
+            <div class="container">
+                <div class="row">
+                    <!-- Team member -->
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                            <div class="mainflip">
+                                <div class="frontside">
+                                    <div class="card">
+                                        <div class="card-body text-center">
+                                            <p><img class=" img-fluid" src="images/drZarbá.jpeg" alt="card image"></p>
+
+                                            <br>
+                                            <h4 class="card-title">Dr. Juan José Zarbá</h4>
+                                            <p class="card-text">Director médico y oncólogo clínico</p>
+                                            <br>
+                                            <a href="#" class="btn btn-outline-success btn-sm"><i class="fa fa-plus"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="backside">
+                                    <div class="card">
+                                        <div class="card-body text-center mt-4">
+                                            <h4 class="card-title">Dr. Juan José Zarbá</h4>
+                                            <p class="card-text">Director médico y oncólogo clínico</p>
+                                            <hr>
+                                            <ul>
+                                              <li style="margin-bottom: 6px"><i class="fa fa-check"></i> Profesor adjunto de la cátedra de Oncología en la Facultad de Medicina de la UNT.</li>
+                                              <li style="margin-bottom: 6px"><i class="fa fa-check"></i> Jefe del Servicio de Oncología del Hospital Centro de Salud Zenón Santillán.</li>
+                                              <li style="margin-bottom: 6px"><i class="fa fa-check"></i> Ex residente del Dr. Reynaldo Chacon, Buenos Aires.</li>
+                                              <li style="margin-bottom: 6px"><i class="fa fa-check"></i> Ex residente extranjero del Instituto Gustave Roussy, París, Francia.</li>
+                                            </ul>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ./Team member -->
+                    <!-- Team member -->
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                            <div class="mainflip">
+                                <div class="frontside">
+                                    <div class="card">
+                                        <div class="card-body text-center">
+                                            <p><img class=" img-fluid" src="images/drArcuri.jpeg" alt="card image"></p>
+                                            <br>  
+                                            <h4 class="card-title">Dr. Jorge Arcuri</h4>
+                                            <p class="card-text">Oncólogo Clínico</p>
+                                            <br>  
+                                            <a href="#" class="btn btn-outline-success btn-sm"><i class="fa fa-plus"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="backside">
+                                    <div class="card">
+                                        <div class="card-body text-center mt-4">
+                                            <h4 class="card-title">Dr. Jorge Arcuri</h4>
+                                            <p class="card-text">Director médico y oncólogo clínico</p>
+                                            <hr>
+                                            <ul>
+                                              <li style="margin-bottom: 6px"><i class="fa fa-check"></i> Docente de la cátedra de Oncología de la Facultad de Medicina de la UNT.</li>
+                                              <li style="margin-bottom: 6px"><i class="fa fa-check"></i> Médico Oncólogo del servicio de Oncología del Hospital Centro de Salud Zenón Santillán.</li>
+                                              <li style="margin-bottom: 6px"><i class="fa fa-check"></i> Ex residente del Instituto Angel Rofo, Buenos Aires.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ./Team member -->
+                    <!-- Team member -->
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                            <div class="mainflip">
+                                <div class="frontside">
+                                    <div class="card">
+                                        <div class="card-body text-center">
+                                            <p><img class=" img-fluid" src="images/doctor/3.png" alt="card image"></p>
+                                            <br>  
+                                            <h4 class="card-title">Lic. Silvia Rivera</h4>
+                                            <p class="card-text">Psico-Oncología - Licenciada en Psicología</p>
+                                            <br>
+                                            <a href="#" class="btn btn-outline-success btn-sm"><i class="fa fa-plus"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="backside">
+                                    <div class="card">
+                                        <div class="card-body text-center mt-4">
+                                            <h4 class="card-title">Lic. Silvia Rivera</h4>
+                                            <p class="card-text">Director médico y oncólogo clínico</p>
+                                            <hr>
+                                            <ul>
+                                              <li style="margin-bottom: 6px"><i class="fa fa-check"></i> Lic. en psicología - Universidad del Norte de Santo Tomás de Aquino, Tucuman 2007-2012</li>
+                                              <li style="margin-bottom: 6px"><i class="fa fa-check"></i> Curso de especialización en Psico-Oncología - Centro Integral de Psicooncología, Tucuman, 2013-2015</li>
+                                              <li style="margin-bottom: 6px"><i class="fa fa-check"></i> Curso: Conceptos básicos en Psicooncología- Instituto Nacional del Cáncer- 2017</li>
+                                              <li style="margin-bottom: 6px"><i class="fa fa-check"></i> Seminario avanzado de Psicooncología - Instituto Nacional del Cáncer 2018</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ./Team member -->
+
+                </div>
+            </div>
+        </section>
+        <!-- Team -->
+
+
+
         
         <!-- Start Blog Area --> 
        
