@@ -674,3 +674,8 @@ input:-ms-input-placeholder { / IE 10+ /
 input:-moz-placeholder { / Firefox 18- /
   opacity: 1;
 }
+
+.btn-collapsable {
+  color: #A19B79;
+}
+

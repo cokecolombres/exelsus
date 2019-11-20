@@ -1088,7 +1088,7 @@ color: #ea4335;
     Special banner css here
 --------------*/
 .special_banner {
-  background: rgba(0, 0, 0, 0) url("images/banner/banner.jpeg") no-repeat scroll center center / cover ;
+  background: rgba(0, 0, 0, 0) url("images/banner/escritorio.jpeg") no-repeat scroll center center / cover ;
   padding-bottom: 135px;
   padding-top: 135px;
 }
