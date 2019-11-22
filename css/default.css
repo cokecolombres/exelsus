@@ -679,3 +679,10 @@ input:-moz-placeholder { / Firefox 18- /
   color: #A19B79;
 }
 
+.text_justify {
+  text-align: justify; 
+}
+
+.contact {
+  float: right;
+}
