@@ -681,6 +681,7 @@ input:-moz-placeholder { / Firefox 18- /
 
 .text_justify {
   text-align: justify; 
+  text-indent: 2em;
 }
 
 .contact {
