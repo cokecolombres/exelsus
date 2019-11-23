@@ -687,3 +687,12 @@ input:-moz-placeholder { / Firefox 18- /
 .contact {
   float: right;
 }
+
+.map_footer {
+  width: 80%;
+  height: 180px;
+}
+
+.hecho_por {
+  float: left;
+}
