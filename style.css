@@ -5558,3 +5558,21 @@ blockquote {
 	line-height: 45px;
 	margin-top: 25px;
 }
+
+.text-gris {
+  color: #9d9d9d;
+  font-size: 35px;
+}
+
+.text-gris:hover {
+  color: #007bff;
+  font-size: 35px;
+}
+
+.hor {
+  display: inline;
+}
+
+.display-in li {
+  display: inline;
+}
